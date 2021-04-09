@@ -1,6 +1,10 @@
+[![docker](https://github.com/karlbateman/pandora/actions/workflows/docker.yaml/badge.svg)](https://github.com/karlbateman/pandora/actions/workflows/docker.yaml)
+
 # Pandora
 
 > [Sudoku] Solver.
+
+## Introduction
 
 A toy solver which generates solutions for the following board configurations:
 
@@ -9,11 +13,11 @@ A toy solver which generates solutions for the following board configurations:
 
 For simplicity no other types of board are supported!
 
-## Usage
+## Getting Started
 
 The Sudoku board state is read from `stdin`, the solver expects a 2D grid of numbers in a square, where blank spots are
 represented by `.` (dots). For example inputs, please see the `examples/` directory. Whitespace is ignored when reading
-in the initial board. The example below can be ran from the project root after the installation process is complete.
+in the initial board.
 
 ```bash
 cat examples/9x9example_1.txt | docker run --rm -i karlbateman/pandora
